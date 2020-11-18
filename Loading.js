@@ -1,10 +1,11 @@
 import React from "react";
-import {StyleSheet, Text, View} from "react-native";
-import * as Location from 'expo-location';
+import {StyleSheet, Text, View, StatusBar} from "react-native";
+
 
 export default function Loading(){
     return(
      <View style = {styles.container}>
+         <StatusBar barStyle = "dark-content"/>
          <Text style={styles.text}>Getting the funking weather</Text>
     </View>
     );
